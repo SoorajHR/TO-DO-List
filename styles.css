@@ -1,0 +1,144 @@
+/* General styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom right, #74ebd5, #ACB6E5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #333;
+}
+
+/* Container styles */
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.container:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Header styles */
+h1 {
+    margin-bottom: 10px;
+    color: #00796b;
+    font-weight: 600;
+}
+
+/* Date and time styles */
+#datetime {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Input group styles */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="date"], input[type="time"] {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1em;
+    transition: border-color 0.3s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+}
+
+input[type="text"]:focus, input[type="date"]:focus, input[type="time"]:focus {
+    border-color: #00796b;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    background: #00796b;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 1em;
+    transition: background 0.3s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+}
+
+button:hover {
+    background: #004d40;
+}
+
+/* Task list styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #fafafa;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-text {
+    flex: 1;
+    font-size: 1em;
+}
+
+.task-timestamp {
+    font-size: 0.8em;
+    color: #777;
+    margin-left: 10px;
+}
+
+li button {
+    background: #e53935;
+    padding: 8px 12px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 0.8em;
+    transition: background 0.3s ease-in-out;
+}
+
+li button:hover {
+    background: #b71c1c;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    .input-group {
+        flex-direction: column;
+    }
+
+    input[type="text"], input[type="date"], input[type="time"], button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    button {
+        border-radius: 8px;
+    }
+}
